@@ -1,9 +1,10 @@
+import java.util.Locale;
 import java.util.Random;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        
-        System.out.println("Discando...");
+
+       System.out.println("Discando...");
 
         do{
             //executando repetidas vezes até alguém atender

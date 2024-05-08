@@ -32,8 +32,8 @@ public class SimulacaoBancaria {
                System.out.println("Informe o valor do saque: " );
                double saque = sc.nextDouble();
                if(saque > saldo){
-                 System.out.println("Saldo insuficiente");
-                 System.out.println("Programa encerrado");
+                 System.out.println("Saldo insuficiente.");
+                 System.out.println("Programa encerrado.");
                }else{
                 saldo-=saque;
                 System.out.printf("Saldo Atual: %.2f \n", saldo);
@@ -41,11 +41,11 @@ public class SimulacaoBancaria {
                break;
                
                case 3:
-                 System.out.printf("Saldo Atual: %.2f ", saldo);
+                 System.out.printf("Saldo Atual: %.2f \n", saldo);
                break;
                
                case 0:
-                 System.out.println("Programa encerrado");
+                 System.out.println("Programa encerrado.");
                  sc.close();
                 return;
         

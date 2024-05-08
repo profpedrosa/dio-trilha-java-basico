@@ -17,7 +17,10 @@ public class SimulacaoBancaria {
                   
             int opcao = sc.nextInt();
             
-            
+            if (opcao == 0) {
+              System.out.println("Programa encerrado.");
+              break; // Sai do loop
+          }
             
             // Dica: Utilze o switch/case para o programa realizar as operações escolhidas pelo usuário.
         switch(opcao){
@@ -25,7 +28,7 @@ public class SimulacaoBancaria {
            case 1:
              System.out.println("Informe o valor do depósito: " );
              saldo += sc.nextDouble();
-             System.out.printf("Saldo Atual: %.2f\n", saldo);
+             System.out.printf("Saldo atual: %.1f\n", saldo);
              break;
              
              case 2:
@@ -33,30 +36,23 @@ public class SimulacaoBancaria {
                double saque = sc.nextDouble();
                if(saque > saldo){
                  System.out.println("Saldo insuficiente.");
-                 System.out.println("Programa encerrado.");
+                break;
                }else{
                 saldo-=saque;
-                System.out.printf("Saldo Atual: %.2f \n", saldo);
+                System.out.printf("Saldo atual: %.1f \n", saldo);
                }
                break;
                
                case 3:
-                 System.out.printf("Saldo Atual: %.2f \n", saldo);
+                 System.out.printf("Saldo atual: %.2f \n", saldo);
                break;
-               
-               case 0:
-                 System.out.println("Programa encerrado.");
-                 sc.close();
-                return;
-        
-        // Exibe mensagem de opção inválida se o usuário escolher uma opção inválida:    
+              // Exibe mensagem de opção inválida se o usuário escolher uma opção inválida:    
                 default:
                     System.out.println("Opção inválida. Tente novamente."); 
             }
             
         }
-        
+        sc.close();
     }
     
 }
-

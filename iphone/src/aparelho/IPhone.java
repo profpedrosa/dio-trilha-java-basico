@@ -21,6 +21,10 @@ public class IPhone implements ReprodutorMusical, AparelhoTelefonico, NavegadorI
     }
 
     @Override
+    public void selecionarMusica() {
+        System.out.println("Música selecionada.");
+    }
+    @Override
     public void ligar(String numero) {
         System.out.println("Ligando para: " + numero);
     }

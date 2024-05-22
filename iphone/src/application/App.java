@@ -9,6 +9,7 @@ public class App {
         meuIPhone.tocarMusica("Iron_Maiden1.mp3");
         meuIPhone.pausarMusica();
         meuIPhone.pararMusica();
+        meuIPhone.selecionarMusica();
         
         // Aparelho Telefônico
         meuIPhone.ligar("1234567897");
